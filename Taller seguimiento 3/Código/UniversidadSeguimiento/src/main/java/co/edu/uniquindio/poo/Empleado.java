@@ -5,15 +5,15 @@ public class Empleado {
     private String id;
     private String puesto;
     private String correo;
-    private String numero;
+    private String telefono;
     private String fechaContratacion;
-    
-    public Empleado(String nombre, String id, String puesto, String correo, String numero, String fechaContratacion) {
+
+    public Empleado(String nombre, String id, String puesto, String correo, String telefono, String fechaContratacion) {
         this.nombre = nombre;
         this.id = id;
         this.puesto = puesto;
         this.correo = correo;
-        this.numero = numero;
+        this.telefono = telefono;
         this.fechaContratacion = fechaContratacion;
     }
 
@@ -49,12 +49,12 @@ public class Empleado {
         this.correo = correo;
     }
 
-    public String getNumero() {
-        return numero;
+    public String getTelefono() {
+        return telefono;
     }
 
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
     public String getFechaContratacion() {
@@ -63,5 +63,17 @@ public class Empleado {
 
     public void setFechaContratacion(String fechaContratacion) {
         this.fechaContratacion = fechaContratacion;
-    }    
+    }
+
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "nombre='" + nombre + '\'' +
+                ", id='" + id + '\'' +
+                ", puesto='" + puesto + '\'' +
+                ", correo='" + correo + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", fechaContratacion='" + fechaContratacion + '\'' +
+                '}';
+    }
 }
