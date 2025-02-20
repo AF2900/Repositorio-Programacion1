@@ -1,4 +1,4 @@
-package co.edu.uniquindio.poo;
+package main.java.co.edu.uniquindio.poo;
 
 public class Empleado {
     private String nombre;
