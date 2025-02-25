@@ -1,0 +1,11 @@
+String nombre = JOptionPane.showInputDialog("Ingrese el nombre del estudiante: ");
+        String identificacion = JOptionPane.showInputDialog("Ingrese su identificacion: ");
+        int edad = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la edad del estudiante: "));
+        String genero = JOptionPane.showInputDialog("Ingrese el genero: ");
+        String alergias = JOptionPane.showInputDialog("Ingrese las alergias: ");
+        String nombreAcudiente = JOptionPane.showInputDialog("Ingrese nombre del acudiente: ");
+        String numeroAcudiente = JOptionPane.showInputDialog("Ingrese numero de contacto: ");
+
+        Estudiante newEstudiante = new Estudiante(nombre, identificacion, edad,genero,alergias,nombreAcudiente,numeroAcudiente);
+
+        JOptionPane.showMessageDialog(null, newEstudiante);
