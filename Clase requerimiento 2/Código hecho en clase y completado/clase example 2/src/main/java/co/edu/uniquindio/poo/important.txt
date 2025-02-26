@@ -1,0 +1,65 @@
+main agregar
+
+int n = 4;
+        int[] arregloEdades = new int[n];
+
+        /// cuando se pone menor o igual al length se resta uno///
+        /// for(int i = 0; i <= arregloEdades.length-1; i++){}///
+        /// arreglo que se busca posición, agrega números aleatorios///
+        /// El random indica para agregar random numbers///
+        for(int i = 0; i < arregloEdades.length; i++){
+            arregloEdades[i] = (int) (Math.random()*10);
+        }
+
+        for(int i = 0; i < arregloEdades.length; i++){
+            System.out.println(arregloEdades[i] + " ");
+            JOptionPane.showMessageDialog(null, arregloEdades[i] + " ");
+        }
+
+        String mensaje = " ";
+
+        for(int i = 0; i<arregloEdades.length; i++){
+            mensaje += arregloEdades[i] + " ";
+        }
+
+        /// ejemplo pedir info///
+
+
+
+    }
+
+    más arreglos:
+
+    public static void pedirInformacionEstudiante(){
+
+                Estudiante[] listaEstudiante = new Estudiante[10];
+
+                String nombre = JOptionPane.showInputDialog("Ingrese el nombre del estudiante" + i+1 + ":");
+                int edad = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el edad"));
+                String genero = JOptionPane.showInputDialog("Ingrese el genero");
+                String id = JOptionPane.showInputDialog("Ingrese el id del estudiante");
+                String alergias = JOptionPane.showInputDialog("Ingrese el alergias");
+                String nombreAcudiente = JOptionPane.showInputDialog("Ingrese el nombre del acudiente");
+                String telefono = JOptionPane.showInputDialog("Ingrese el telefono");
+
+                Estudiante newEstudiante = new Estudiante(nombre, edad, genero, id, alergias, nombreAcudiente, telefono);
+
+                listEstudiante[i] = newEstudiante;
+            }
+
+        }
+
+        /// private Estudiante[] listEstudiantes; "arriba en public"
+            ///
+            /// CRUD
+            /// en la guarderia para main se crea un objeto guarderia con ver vídeo....
+            /// public int encontrar posicion
+            ///
+            ///
+            ///
+            ///
+            ///
+            ///
+            ///
+            ///
+            ///

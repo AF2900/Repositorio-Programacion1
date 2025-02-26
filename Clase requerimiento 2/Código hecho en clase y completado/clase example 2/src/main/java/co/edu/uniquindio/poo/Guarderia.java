@@ -8,10 +8,11 @@ public class Guarderia {
     private String nit;
     private ArrayList<Estudiante> listaEstudiantes;
 
-    public Guarderia(String nombre, String direccion, String nit) {
+    public Guarderia(String nombre, String direccion, String nit, ArrayList<Estudiante> listaEstudiantes) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.nit = nit;
+        this.listaEstudiantes = listaEstudiantes;
     }
     
     /// proceso CRUD más la lista
