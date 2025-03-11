@@ -128,4 +128,3 @@ public class Empresa {
         crearEmpleado(new Empleado("Carlos Díaz", "54321", "Gerente", 12, asignarSalarioPorCargo("Gerente")));
     }
 }
-
