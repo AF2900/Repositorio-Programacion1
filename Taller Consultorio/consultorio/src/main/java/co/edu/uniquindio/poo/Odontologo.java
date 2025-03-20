@@ -28,4 +28,14 @@ public class Odontologo {
     public Especialidad getEspecialidad() {
         return especialidad;
     }
+
+    @Override
+    public String toString() {
+        return "Odontologo{" +
+                "id='" + id + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", numeroLicencia='" + numeroLicencia + '\'' +
+                ", especialidad=" + especialidad +
+                '}';
+    }
 }
