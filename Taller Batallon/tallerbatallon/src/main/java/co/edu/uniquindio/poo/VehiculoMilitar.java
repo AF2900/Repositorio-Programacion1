@@ -1,11 +1,11 @@
 package co.edu.uniquindio.poo;
 
 public class VehiculoMilitar {
-    public String id;
-    public String modelo;
-    public String fechaFabricacion;
-    public int kilometraje;
-    public EstadoOperativo estadoOperativo;
+    protected String id;
+    protected String modelo;
+    protected String fechaFabricacion;
+    protected int kilometraje;
+    protected EstadoOperativo estadoOperativo;
 
     public VehiculoMilitar(String id, String modelo, String fechaFabricacion, int kilometraje){
         this.id = id;
