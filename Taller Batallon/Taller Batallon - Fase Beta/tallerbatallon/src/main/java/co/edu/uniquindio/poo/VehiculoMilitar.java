@@ -1,19 +1,23 @@
 package co.edu.uniquindio.poo;
 
-public class VehiculoMilitar {
+public abstract class VehiculoMilitar {
     protected String id;
     protected String modelo;
     protected String fechaFabricacion;
     protected int kilometraje;
+    protected int misionesCompletadas;
     protected EstadoOperativo estadoOperativo;
 
-    public VehiculoMilitar(String id, String modelo, String fechaFabricacion, int kilometraje){
+    public VehiculoMilitar(String id, String modelo, String fechaFabricacion, int kilometraje, int misionesCompletadas, EstadoOperativo estadoOperativo) {
         this.id = id;
         this.modelo = modelo;
         this.fechaFabricacion = fechaFabricacion;
         this.kilometraje = kilometraje;
+        this.misionesCompletadas = misionesCompletadas;
         this.estadoOperativo = estadoOperativo;
     }
+
+    public abstract void desplazar();
 
     public String getId(){
         return id;
@@ -47,11 +51,11 @@ public class VehiculoMilitar {
         this.kilometraje = kilometraje;
     }
 
-    public EstadoOperativo getEstadoOperativo() {
-        return estadoOperativo;
+    public int getMisionesCompletadas() {
+        return misionesCompletadas;
     }
 
-    public void setEstadoOperativo(EstadoOperativo estadoOperativo) {
-        this.estadoOperativo = estadoOperativo;
+    public void setMisionesCompletadas(int misionesCompletadas) {
+        this.misionesCompletadas = misionesCompletadas;
     }
 }

@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo;
 
-public enum TipoFuncion {
+public enum TipoApoyo {
     LOGISTICA,
     COMUNICACIONES,
     MEDICO;
