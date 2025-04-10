@@ -1,4 +1,4 @@
-package co.edu.uniquindio;
+package co.edu.uniquindio.poo;
 
 public class VehiculoApoyo extends Vehiculo {
     private TipoFuncion tipoFuncion;

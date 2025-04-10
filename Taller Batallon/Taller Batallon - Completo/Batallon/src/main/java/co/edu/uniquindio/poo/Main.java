@@ -1,4 +1,4 @@
-package co.edu.uniquindio;
+package co.edu.uniquindio.poo;
 
 import java.time.LocalDate;
 import java.util.LinkedList;
