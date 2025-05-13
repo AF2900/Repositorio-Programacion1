@@ -8,7 +8,7 @@ public class Mision {
     private int id;
     private LocalDate fecha;
     private String ubicacion;
-    private LinkedList<String> personal;
+    private LinkedList<Soldado> listSoldados = new LinkedList<>();
 
     private Vehiculo theVehiculo;
 
@@ -16,8 +16,7 @@ public class Mision {
         this.id = id;
         this.fecha = fecha;
         this.ubicacion = ubicacion;
-        personal = new LinkedList<>();
-
+        listSoldados = new LinkedList<>();
     }
 
     public int getId() {
@@ -44,14 +43,6 @@ public class Mision {
         this.ubicacion = ubicacion;
     }
 
-    public LinkedList<String> getPersonal() {
-        return personal;
-    }
-
-    public void setPersonal(LinkedList<String> personal) {
-        this.personal = personal;
-    }
-
     public Vehiculo getTheVehiculo() {
         return theVehiculo;
     }
@@ -60,6 +51,19 @@ public class Mision {
         this.theVehiculo = theVehiculo;
     }
 
-    public void setListPersonal(LinkedList listPersonal) {
+    public void setListPersonal(LinkedList listSoldados) {
+        this.listSoldados = this.listSoldados;
+    }
+
+    public LinkedList<Soldado> getListPersonal() {
+        return listSoldados;
+    }
+
+
+
+    public void agregarPersonal(Soldado soldado) {
+        if (!listSoldados.contains(soldado)) {
+            listSoldados.add(soldado);
+        }
     }
 }
